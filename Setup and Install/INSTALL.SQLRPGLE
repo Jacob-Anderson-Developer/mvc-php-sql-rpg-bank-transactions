@@ -36,7 +36,8 @@
              'USERNAME VARCHAR(20) NOT NULL, '                +
              'TRANSTYPE CHAR(1) NOT NULL, '                   +
              'AMOUNT DECIMAL(15, 2) NOT NULL, '               +
-             'TRANSTIME TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP)';
+             'TRANSTIME TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP) ' +
+             'RCDFMT BAL';
 
         Exec Sql
           Execute Immediate :CreateTable;

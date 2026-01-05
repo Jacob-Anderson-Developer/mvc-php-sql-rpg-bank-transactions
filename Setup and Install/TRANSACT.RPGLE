@@ -49,7 +49,7 @@
 
          SetLL (User_Name) BalanceLog;
 
-         Read(e) BalanceLog;
+         Reade User_Name BalanceLog;
 
          Dow Not %Eof(BalanceLog) And %Equal(BalanceLog);
            If TRANSTYPE = 'W';
@@ -57,7 +57,7 @@
            Else;
              Deposit += Amount;
            EndIf;
-           Read BalanceLog;
+           Reade User_Name BalanceLog;
          EndDo;
 
          Balance = Deposit - Withdrawal;
